@@ -1,0 +1,64 @@
+<?xml version="1.0" encondig="UTF-8"?>
+<interface>
+  <template class="SimpleGtkLogin" parent="GtkApplicationWindow">
+    <property name="title">Login</property>
+    <child>
+      <object class="GtkGrid">
+        <child>
+          <object class="GtkLabel">
+            <property name="label">User:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkText" id="user_id">
+            <layout>
+              <property name="column">1</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Password:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkText" id="user_pass">
+            <property name="input-purpose">Password</property>
+            <property name="visibility">false</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="cancel_btn">
+            <property name="label">cancel</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="ok_btn">
+            <property name="label">ok</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>  
+</interface>
